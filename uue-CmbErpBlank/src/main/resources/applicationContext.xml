@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:http-conf="http://cxf.apache.org/transports/http/configuration"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+ http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/jee 
+  
+http://www.springframework.org/schema/jee/spring-jee-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd http://cxf.apache.org/transports/http/configuration http://cxf.apache.org/schemas/configuration/http-conf.xsd " >
+
+
+	<!--导入与CXF框架有关的xml文件-->
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	
+	 <http-conf:destination name="*.http-destination">  
+        <http-conf:server ReceiveTimeout="30000"/>  
+    </http-conf:destination>  
+
+	<!-- DB配置文件读入-->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>
+					classpath:com/zihexin/business_interface/cfg/ibatis/*.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- Main JNDI DataSource for WebLogic environments -->
+	<jee:jndi-lookup id="dataSource" jndi-name="bus_inter" />
+
+	<!-- Main JNDI DataSource for WebLogic environments -->
+	<jee:jndi-lookup id="financeDataSource" jndi-name="finance" />
+	
+	
+	<!-- Main JNDI DataSource for WebLogic environments -->
+	<jee:jndi-lookup id="xshTestDataSource" jndi-name="xshTest" />
+	
+	
+	<!--
+		oracle配置 <bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close"> <property name="jdbcUrl"
+		value="${oracleFinanceWebService.jdbcUrl}"/> <property
+		name="driverClass" value="${oracleFinanceWebService.driverClass}"/>
+		<property name="user" value="${oracleFinanceWebService.user}"/>
+		<property name="password"
+		value="${oracleFinanceWebService.password}"/> <property
+		name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}"/>
+		<property name="idleConnectionTestPeriod"
+		value="${c3p0.idleConnectionTestPeriod}"/> <property
+		name="acquireIncrement" value="${c3p0.acquireIncrement}"/> <property
+		name="maxPoolSize" value="${c3p0.maxPoolSize}"/> <property
+		name="minPoolSize" value="${c3p0.minPoolSize}"/> <property
+		name="maxStatements" value="${c3p0.maxStatements}"/> <property
+		name="testConnectionOnCheckin"
+		value="${c3p0.testConnectionOnCheckin}"/> <property
+		name="numHelperThreads" value="${c3p0.numHelperThreads}"/> <property
+		name="initialPoolSize" value="${c3p0.initialPoolSize}"/> </bean>
+	-->
+	
+	<!-- 第一个数据源 配置开始************************************* -->
+	<!-- iBATIS 映射文件管理器工厂类 -->
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"
+			value="classpath:com/zihexin/business_interface/cfg/ibatis/SqlMapConfig.xml" />
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+
+	<bean id="baseDao" abstract="true"
+		class="com.zihexin.business_interface.common.dao.impl.BaseDao">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+	</bean>
+	<!-- 第一个数据源 配置结束************************************* -->
+	
+	
+	<!-- 第二个数据源 配置开始 理财数据库 ************************************* -->
+	
+	<!-- iBATIS 映射文件管理器工厂类 -->
+	<bean id="financeDataSource_sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"
+			value="classpath:com/zihexin/business_interface/cfg/ibatis/SqlMapConfig.xml" />
+		<property name="dataSource" ref="financeDataSource" />
+	</bean>
+	
+	<bean id="financeBaseDao" abstract="true"
+		class="com.zihexin.business_interface.common.dao.impl.BaseDao">
+		<property name="dataSource">
+			<ref bean="financeDataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="financeDataSource_sqlMapClient" />
+		</property>
+	</bean>
+	<!-- 第二个数据源 配置结束 理财数据库 ************************************* -->
+	
+	
+	<!-- 第三个数据源 配置开始 xshtest数据库 ************************************* -->
+	
+	<!-- iBATIS 映射文件管理器工厂类 -->
+	<bean id="xshTestDataSource_sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="configLocation"
+			value="classpath:com/zihexin/business_interface/cfg/ibatis/SqlMapConfig.xml" />
+		<property name="dataSource" ref="xshTestDataSource" />
+	</bean>
+	
+	<bean id="xshTestBaseDao" abstract="true"
+		class="com.zihexin.business_interface.common.dao.impl.BaseDao">
+		<property name="dataSource">
+			<ref bean="xshTestDataSource" />
+		</property>
+		<property name="sqlMapClient">
+			<ref bean="xshTestDataSource_sqlMapClient" />
+		</property>
+	</bean>
+	<!-- 第三个数据源 配置结束xshtest数据库 ************************************* -->
+	
+	
+	<bean class="com.zihexin.business_interface.common.Loader"></bean>
+
+	<bean id="readPropertiesDao" class="com.zihexin.business_interface.dao.ReadPropertiesDao"
+		parent="baseDao" />
+		
+	<!-- 理财数据库 数据层 配置 -->
+	<bean id="financeDao" class="com.zihexin.business_interface.dao.FinanceDao"
+	parent="financeBaseDao" />
+	
+	<!-- 理财数据库 数据层 配置 -->
+	<bean id="xshTestDao" class="com.zihexin.business_interface.dao.XshTestBaseDao"
+	parent="xshTestBaseDao" />
+		
+
+	<!--注入银行Service层-->
+	<bean id="abcBankService"
+		class="com.zihexin.business_interface.bank.serviceImpl.AbcBankServiceImpl">
+		<property name="readPropertiesDao">
+			<ref bean="readPropertiesDao" />
+		</property>
+		<property name="bankConnectorSupport">
+			<ref bean="bankConnectorSupport" />
+		</property>
+
+	</bean>
+
+
+	<!--注入处理POS前置请求业务Service层-->
+	<bean id="posFrontBankService"
+		class="com.zihexin.business_interface.bank.serviceImpl.POSFrontBankServiceImpl">
+		
+		<property name="readPropertiesDao"> <ref bean="readPropertiesDao" /></property>
+		<property name="financeDao"> <ref bean="financeDao" /> </property>
+		<property name="xshTestDao"> <ref bean="xshTestDao" /> </property>
+	</bean>
+
+
+	<bean id="posFrontWebService"
+		class="com.zihexin.business_interface.WebService.PosFrontWebServiceImpl">
+			<property name="readPropertiesDao">
+			<ref bean="readPropertiesDao" />
+		</property>
+		<property name="posFrontBankService" ref="posFrontBankService" />
+	</bean>
+
+	
+	<bean id="bankWebService"
+		class="com.zihexin.business_interface.WebService.BankWebServiceImpl">
+		
+		<property name="readPropertiesDao">
+			<ref bean="readPropertiesDao" />
+		</property>
+	</bean>
+	
+		<!-- 发布发送POS前置服务端接口-->
+	<jaxws:endpoint id="PosFrontWebService" implementor="#posFrontWebService"
+		address="/posFrontWebService">
+		
+	</jaxws:endpoint>
+	
+	<!-- 发布业务服务端接口-->
+	<jaxws:endpoint id="IcbcBankWebService" implementor="#bankWebService"
+		address="/bankWebService">
+	</jaxws:endpoint>
+	
+
+	<!--加载与银行的socket连接配置文件-->
+    <import resource="applicationContext-bankClient.xml"/>
+
+</beans> 

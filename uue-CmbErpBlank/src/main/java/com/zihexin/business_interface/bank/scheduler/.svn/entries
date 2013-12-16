@@ -1,0 +1,52 @@
+8
+
+dir
+1712
+svn://10.0.10.103/finance/code/CmbErpBlank_WebService/src/com/zihexin/business_interface/bank/scheduler
+svn://10.0.10.103/finance
+
+
+
+2013-12-06T07:40:04.011507Z
+1712
+mixianbin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cc0c1fde-b139-44ce-9680-6e856afda2f3
+
+SingNoJob.java
+file
+
+
+
+
+2013-12-06T07:44:01.156250Z
+1395504c10e6c8e52706d3f062098184
+2013-12-06T07:40:04.011507Z
+1712
+mixianbin
+
+SingNoJobService.java
+file
+
+
+
+
+2013-12-06T07:44:01.171875Z
+0a7a00e297f2ce1e6124265fc76e7bad
+2013-12-06T07:40:04.011507Z
+1712
+mixianbin
+

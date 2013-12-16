@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- 签到 定时任务 -->
+    <bean id="singNoJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+        <property name="jobClass"
+                  value="com.zihexin.business_interface.bank.scheduler.SingNoJob">
+        </property>
+    </bean>
+
+    <bean id="singNoTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="singNoJob"></property>
+        <property name="cronExpression" value="${boc.bank.singNoJob}"></property>
+    </bean>
+
+    <bean id="singNoJobService" class="com.zihexin.business_interface.bank.scheduler.SingNoJobService" />
+
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <!-- 签到 -->
+                <ref bean="singNoTrigger" />
+            </list>
+        </property>
+    </bean>
+</beans>

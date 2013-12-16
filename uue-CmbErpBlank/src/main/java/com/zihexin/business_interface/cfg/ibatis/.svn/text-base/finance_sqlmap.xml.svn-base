@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/ibatis-2-config.dtd">
+<sqlMap namespace="financeSql">
+   
+
+    <!--根据medium_id查询关联介质信息和网络支付账户信息-->
+      <select id="queryNtacctMediumByMedId" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        select t.Medium_Id , t.acct_id, t.cons_order ,t2.ACCT_STATUS from NET_T_NTACCT_MEDIUM_R t 
+		inner join NET_T_NETPAY_ACCOUNT t2   on t2.ACCT_ID = t.acct_id
+		where t.status='01' and t.R_TYPE=#r_type# and t2.ACCT_STATUS='06' and t.Medium_Id = #medium_id#
+    </select>
+    
+    
+    <!--根据acct_id查询关联介质信息和网络支付账户信息-->
+      <select id="queryNtacctMediumByAcctId" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        select t.Medium_Id , t.acct_id, t.cons_order ,t2.ACCT_STATUS from NET_T_NTACCT_MEDIUM_R t 
+		inner join NET_T_NETPAY_ACCOUNT t2   on t2.ACCT_ID = t.acct_id
+		where t.status='01' and t.R_TYPE=#r_type# and t2.ACCT_STATUS='06' and t.acct_id = #acct_id#
+    </select>
+    
+      <!--根据medium_id查询银行卡信息和账户姓名信息-->
+      <select id="queryCardNoByMedId" parameterClass="string" resultClass="java.util.HashMap">
+        select t.Medium_Id , t.cons_order,t2.CARD_NO,t2.bank_card_id, t2.MASK_CARD_NO,t3.bank_en_code,t4.ACCT_TRUE_NAME ,t4.ACCT_MOBILE_NO from NET_T_NTACCT_MEDIUM_R t 
+		inner join NET_T_BANKCARD t2   on t.Medium_Id = t2.bank_card_id
+		inner join NET_T_BANK t3 on  t3.bank_id = t2.bank_id 
+		inner join NET_T_NETPAY_ACCOUNT t4 on  t4.ACCT_ID = t.ACCT_ID 
+		where t.R_TYPE='01' and t.status='01' and t2.status='06' and t4.ACCT_STATUS='06' and t.medium_id = #medium_id#
+    </select>
+    
+
+    <!--根据系统参数配置-->
+    <select id="queryPAramList" parameterClass="string" resultClass="java.util.HashMap">
+        select PARAM_ID,PARAM_KEY,PARAM_VALUE,PARAM_TYPE from NET_T_PARAM  
+    </select>
+
+    <!--校验系统指令权限
+    <select id="querySysCommandById" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        select s.market_code, s.market_NAME, sc.COMMAND_ID
+        from T_market S, T_SYS_COMMAND SC
+        where S.market_code = SC.market_code
+        and s.market_code = #commandSrc#
+        and SC.COMMAND_ID = #commandId#
+    </select> -->
+
+  <!--   <insert id="log" parameterClass="java.util.HashMap">
+        INSERT INTO $logTable$ (
+        <dynamic prepend=" ">
+            <isNotEmpty property="logId" prepend=",">LOG_ID</isNotEmpty>
+            <isNotEmpty property="commandId" prepend=",">COMMAND_ID</isNotEmpty>
+            <isNotEmpty property="src" prepend=",">SRC</isNotEmpty>
+            <isNotEmpty property="ip" prepend=",">ADDRESS</isNotEmpty>
+            <isNotEmpty property="businessMes" prepend=",">MES</isNotEmpty>
+            <isNotEmpty property="requestDt" prepend=",">REQUEST_DT</isNotEmpty>
+            <isNotEmpty property="responseDt" prepend=",">RESPONSE_DT</isNotEmpty>
+            <isNotEmpty property="status" prepend=",">STATUS</isNotEmpty>
+            <isNotEmpty property="bank" prepend=",">$BANK$</isNotEmpty>
+            <isNotEmpty property="account" prepend=",">$ACCOUNT$</isNotEmpty>
+            <isNotEmpty property="amt" prepend=",">$AMT$</isNotEmpty>
+            <isNotEmpty property="field4" prepend=",">$field5$</isNotEmpty>
+            <isNotEmpty property="field6" prepend=",">$field6$</isNotEmpty>
+            <isNotEmpty property="field7" prepend=",">$field7$</isNotEmpty>
+            <isNotEmpty property="field8" prepend=",">$field8$</isNotEmpty>
+            <isNotEmpty property="field9" prepend=",">$field9$</isNotEmpty>
+        </dynamic>
+        <![CDATA[
+			) VALUES (
+		]]>
+        <dynamic prepend=" ">
+            <isNotEmpty property="logId" prepend=",">#logId#</isNotEmpty>
+            <isNotEmpty property="commandId" prepend=",">#commandId#</isNotEmpty>
+            <isNotEmpty property="src" prepend=",">#src#</isNotEmpty>
+            <isNotEmpty property="ip" prepend=",">#ip#</isNotEmpty>
+            <isNotEmpty property="businessMes" prepend=",">#businessMes#</isNotEmpty>
+            <isNotEmpty property="requestDt" prepend=",">#requestDt#</isNotEmpty>
+            <isNotEmpty property="responseDt" prepend=",">#responseDt#</isNotEmpty>
+            <isNotEmpty property="status" prepend=",">#status#</isNotEmpty>
+            <isNotEmpty property="bank" prepend=",">#BANK#</isNotEmpty>
+            <isNotEmpty property="account" prepend=",">#ACCOUNT#</isNotEmpty>
+            <isNotEmpty property="amt" prepend=",">$AMT$</isNotEmpty>
+            <isNotEmpty property="fieldValue4" prepend=",">#fieldValue4#</isNotEmpty>
+            <isNotEmpty property="fieldValue5" prepend=",">#fieldValue5#</isNotEmpty>
+            <isNotEmpty property="fieldValue6" prepend=",">#fieldValue6#</isNotEmpty>
+            <isNotEmpty property="fieldValue7" prepend=",">#fieldValue7#</isNotEmpty>
+            <isNotEmpty property="fieldValue8" prepend=",">#fieldValue8#</isNotEmpty>
+        </dynamic>
+        <![CDATA[
+	    	)
+	    ]]>
+    </insert>
+
+    <select id="queryLog" resultClass="java.util.HashMap">
+        select * from t_charge_log
+    </select>
+
+    <select id="queryCommandList"  resultClass="java.util.HashMap">
+        select * from T_COMMAND where STATUS = '1'
+    </select>
+     -->
+
+    <!--获取交易流水表oracle Sequence 序列
+    <select id="getTransRecodeSeq"  resultClass="java.lang.String">
+        select seq_transRecode.nextval as nextval from dual
+    </select>-->
+
+
+    <!--交易流水表 字段配置
+    <insert id="transRecodeSql" parameterClass="java.util.HashMap">
+        INSERT INTO T_TRANSRECODE (
+        <dynamic prepend=" ">
+            <isNotEmpty property="transRecodeNo" prepend=",">TRANSRECODENO</isNotEmpty>
+            <isNotEmpty property="bankCode" prepend=",">BANKCODE</isNotEmpty>
+            <isNotEmpty property="accountNo" prepend=",">ACCOUNTNO</isNotEmpty>
+            <isNotEmpty property="dbCur" prepend=",">DBCUR</isNotEmpty>
+            <isNotEmpty property="amt" prepend=",">AMT</isNotEmpty>
+            <isNotEmpty property="reqDate" prepend=",">REQDATE</isNotEmpty>
+            <isNotEmpty property="respDate" prepend=",">RESPDATE</isNotEmpty>
+            <isNotEmpty property="respCode" prepend=",">RESPCODE</isNotEmpty>
+            <isNotEmpty property="respInfo" prepend=",">RESPINFO</isNotEmpty>
+            <isNotEmpty property="sourceSys" prepend=",">SOURCESYS</isNotEmpty>
+            <isNotEmpty property="cmeSeqNo" prepend=",">CMESEQNO</isNotEmpty>
+            <isNotEmpty property="transType" prepend=",">TRANSTYPE</isNotEmpty>
+
+        </dynamic>
+        <![CDATA[
+			)VALUES(
+		]]>
+        <dynamic prepend=" ">
+            <isNotEmpty property="transRecodeNo" prepend=",">#transRecodeNo#</isNotEmpty>
+            <isNotEmpty property="bankCode" prepend=",">#bankCode#</isNotEmpty>
+            <isNotEmpty property="accountNo" prepend=",">#accountNo#</isNotEmpty>
+            <isNotEmpty property="dbCur" prepend=",">#dbCur#</isNotEmpty>
+            <isNotEmpty property="amt" prepend=",">#amt#</isNotEmpty>
+            <isNotEmpty property="reqDate" prepend=",">#reqDate#</isNotEmpty>
+            <isNotEmpty property="respDate" prepend=",">#respDate#</isNotEmpty>
+            <isNotEmpty property="respCode" prepend=",">#respCode#</isNotEmpty>
+            <isNotEmpty property="respInfo" prepend=",">#respInfo#</isNotEmpty>
+            <isNotEmpty property="sourceSys" prepend=",">#sourceSys#</isNotEmpty>
+            <isNotEmpty property="cmeSeqNo" prepend=",">#cmeSeqNo#</isNotEmpty>
+            <isNotEmpty property="transType" prepend=",">#transType#</isNotEmpty>
+        </dynamic>
+        <![CDATA[
+	    	)
+	    ]]>
+    </insert>-->
+    
+</sqlMap>

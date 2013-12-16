@@ -1,0 +1,67 @@
+8
+
+dir
+1709
+svn://10.0.10.103/finance/code/WTC/src/java/com/zihexin/wtc/common
+svn://10.0.10.103/finance
+
+
+
+2013-05-22T08:14:11.926139Z
+220
+mixianbin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cc0c1fde-b139-44ce-9680-6e856afda2f3
+
+dao
+dir
+
+Loader.java
+file
+
+
+
+
+2013-12-03T12:49:05.031250Z
+6fecb46aa50c1f6c77df1d8daa61e6fe
+2013-05-22T08:14:11.926139Z
+220
+mixianbin
+
+WTCTool.java
+file
+
+
+
+
+2013-12-03T12:49:05.046875Z
+deeacce5fa403e021f64609119255c64
+2013-05-22T08:14:11.926139Z
+220
+mixianbin
+
+UUIDGenerator.java
+file
+
+
+
+
+2013-12-03T12:49:05.062500Z
+897617af0181a0c39d376c09135138b7
+2013-05-22T08:14:11.926139Z
+220
+mixianbin
+

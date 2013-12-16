@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- 与银行的连接配置 -->
+    <bean class="com.zihexin.business_interface.common.socket.connect.BankConnectorSupport" id="bankConnectorSupport">
+        <constructor-arg index="0"><!-- 数据编解码转换器 -->
+        <bean class="com.zihexin.business_interface.common.socket.connect.ABCBankDataAnalyze" />
+    </constructor-arg>
+    <property name="host" value="${abc.bank.connect.host}"/>
+    <property name="port" value="${abc.bank.connect.port}"/>
+    <property name="poolsize" value="${abc.bank.connect.poolsize}"/><!-- 该线程池不可太小 -->
+    <property name="processorPoolSize" value="${abc.bank.connect.processorPoolSize}"/><!-- 处理线程池大小设置 -->
+    <property name="connectSoTimeOut" value="${abc.bank.connect.connectSoTimeOut}"/><!-- 连接超时时间秒 -->
+    <property name="idleStatu"> <!-- 默认为双向发呆设置 -->
+        <!-- 设置方向 READER_IDLE,BOTH_IDLE,WRITER_IDLE和Mina的IdleStatus一致 -->
+        <bean id="org.apache.mina.core.session.IdleStatus.BOTH_IDLE" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean" />
+    </property>
+    <property name="idleTime" value="${abc.bank.connect.idleTime}"/><!-- 请求发呆时间。 -->
+    <property name="readBufferSize" value="${abc.bank.connect.readBufferSize}"/><!-- 接受缓冲区大小 -->
+    <property name="writeTimeout" value="${abc.bank.connect.writeTimeout}"/><!-- 写超时 -->
+    
+    <property name="readPropertiesDao">
+			<ref bean="readPropertiesDao" />
+		</property>
+		
+    </bean>
+</beans>

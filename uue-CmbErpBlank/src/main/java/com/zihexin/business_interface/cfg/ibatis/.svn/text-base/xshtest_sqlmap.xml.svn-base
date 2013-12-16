@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/ibatis-2-config.dtd">
+<sqlMap namespace="xshtestSql">
+   
+	<!--  <parameterMap id="rechargeParam" class="java.util.HashMap">
+	    <parameter property="PRAGMA" jdbcType="VARCHAR" javaType="java.lang.String" mode="OUT" /> 
+	   <parameter property="v_recharge_card_no" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_recharge_account" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_be_recharged_card_no" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_be_recharged_account" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_pos_code" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_pos_water_num" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	   <parameter property="v_swap_type" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	    <parameter property="v_unit_no" jdbcType="VARCHAR" javaType="java.lang.String" mode="IN" />
+	 </parameterMap>--> 
+	 
+	<!--执行充值函数
+	<procedure id="exeRechargeFun2" parameterMap="rechargeParam">
+	   <![CDATA[
+	   {? = call (?,?,?,?,?,?,?,?) }
+	  ]]>
+	</procedure>-->
+	
+	<!-- 执行充值函数 -->
+	<select id="exeRechargeFun" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        select XSH_CARD_MANUAL_RECHARGE(#v_opt_type#,#v_recharge_card_no#,#v_recharge_account#,#v_be_recharged_card_no#,#v_be_recharged_account#,#v_charge_amount#,#v_pos_code#,#v_pos_water_num#,#v_swap_type#,#v_unit_no#) as RETURNRESULT from dual
+    </select>
+	
+	
+    
+</sqlMap>
