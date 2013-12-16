@@ -21,7 +21,7 @@
 		<module>uue-core</module>
 		<module>project-tools</module>
 		<module>uue-common</module>
-		<module>uue-showcase</module>
+		<module>uue-erp</module>
 	</modules>
 
 	<properties>

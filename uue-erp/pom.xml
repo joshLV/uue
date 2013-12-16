@@ -8,9 +8,9 @@
 		<version>1.0.0</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>uue-showcase</artifactId>
+	<artifactId>uue-erp</artifactId>
 	<packaging>war</packaging>
-	<name>uue :: uue-showcase</name>
+	<name>uue :: uue-erp</name>
 
 	<dependencies>
 		<dependency>
