@@ -22,8 +22,8 @@
 		<module>project-tools</module>
 		<module>uue-common</module>
 		<module>uue-erp</module>
-		<module>uue-wtc</module>
-		<module>uue-CmbErpBlank</module>
+		<!--<module>uue-wtc</module>
+		<module>uue-CmbErpBlank</module>-->
 	</modules>
 
 	<properties>
