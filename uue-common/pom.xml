@@ -8,9 +8,9 @@
 		<version>1.0.0</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>common-service</artifactId>
+	<artifactId>uue-common</artifactId>
 	<packaging>jar</packaging>
-	<name>s2jh :: module :: common</name>
+	<name>uue :: module :: uue-common</name>
 
 	<dependencies>
 		<!-- j2ee web spec -->
@@ -29,12 +29,12 @@
 		<!-- WEB end -->
 		<dependency>
 			<groupId>lab.s2jh</groupId>
-			<artifactId>core-service</artifactId>
+			<artifactId>uue-core</artifactId>
 			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
-			<artifactId>core-service</artifactId>
+			<artifactId>uue-core</artifactId>
 			<classifier>tests</classifier>
 			<scope>test</scope>
 			<version>${uue.version}</version>
@@ -46,7 +46,7 @@
 		</dependency>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
-			<artifactId>jasperreports-extension</artifactId>
+			<artifactId>uue-jasperreports</artifactId>
 			<version>${uue.version}</version>
 		</dependency>
 		<dependency>

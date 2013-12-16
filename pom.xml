@@ -17,7 +17,7 @@
 
 	<!-- modules -->
 	<modules>
-		<module>jasperreports-extension</module>
+		<module>uue-jasperreports</module>
 		<module>uue-core</module>
 		<module>project-tools</module>
 		<module>uue-common</module>

@@ -8,7 +8,7 @@
 		<version>1.0.0</version>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>jasperreports-extension</artifactId>
+	<artifactId>uue-jasperreports</artifactId>
 	<packaging>jar</packaging>
-	<name>s2jh :: module :: jasperreports-extension</name>
+	<name>uue :: module :: uue-jasperreports</name>
 </project>

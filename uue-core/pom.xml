@@ -10,7 +10,7 @@
 	</parent>
 	<artifactId>uue-core</artifactId>
 	<packaging>jar</packaging>
-	<name>s2jh :: module :: core</name>
+	<name>uue :: module :: uue-core</name>
 
 	<dependencies>
 		<!-- j2ee web spec -->
