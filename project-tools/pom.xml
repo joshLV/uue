@@ -4,7 +4,7 @@
 	<artifactId>project-tools</artifactId>
 	<parent>
 		<groupId>lab.s2jh</groupId>
-		<artifactId>s2jh-parent</artifactId>
+		<artifactId>uue-parent</artifactId>
 		<version>1.0.0</version>
 		<relativePath>..</relativePath>
 	</parent>
@@ -14,8 +14,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
-			<artifactId>core-service</artifactId>
-			<version>${s2jh.version}</version>
+			<artifactId>uue-core</artifactId>
+			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.freemarker</groupId>

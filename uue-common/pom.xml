@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>lab.s2jh</groupId>
-		<artifactId>s2jh-parent</artifactId>
+		<artifactId>uue-parent</artifactId>
 		<version>1.0.0</version>
 		<relativePath>..</relativePath>
 	</parent>
@@ -30,24 +30,24 @@
 		<dependency>
 			<groupId>lab.s2jh</groupId>
 			<artifactId>core-service</artifactId>
-			<version>${s2jh.version}</version>
+			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
 			<artifactId>core-service</artifactId>
 			<classifier>tests</classifier>
 			<scope>test</scope>
-			<version>${s2jh.version}</version>
+			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
 			<artifactId>project-tools</artifactId>
-			<version>${s2jh.version}</version>
+			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>lab.s2jh</groupId>
 			<artifactId>jasperreports-extension</artifactId>
-			<version>${s2jh.version}</version>
+			<version>${uue.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
