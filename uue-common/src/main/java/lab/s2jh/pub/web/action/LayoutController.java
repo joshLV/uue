@@ -1,6 +1,8 @@
 package lab.s2jh.pub.web.action;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,6 +19,8 @@ import org.apache.struts2.rest.HttpHeaders;
 import org.apache.struts2.rest.RestActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.GrantedAuthorityImpl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -70,5 +74,25 @@ public class LayoutController extends RestActionSupport implements ModelDriven<O
     public Object getModel() {
         return model;
     }
+    
+    public void setModel(Object model) {
+		this.model = model;
+	}
+
+	/**
+	 * 获取菜单数据
+	 * @return
+	 * @throws JsonProcessingException
+	 */
+	public HttpHeaders menuNew() throws JsonProcessingException{
+		HttpServletRequest request = ServletActionContext.getRequest();
+		Set<GrantedAuthority> authories = new HashSet<GrantedAuthority>();
+		authories.add(new GrantedAuthorityImpl("ROLE_ADMIN"));
+		List<NavMenuVO> menus = menuService.authUserMenu(authories, request.getContextPath());
+		request.setAttribute("rootMenus", menus);
+		request.setAttribute("menuJsonData", mapper.writeValueAsString(menus));
+		setModel(menus);
+		return new DefaultHttpHeaders().disableCaching();
+	}
 
 }

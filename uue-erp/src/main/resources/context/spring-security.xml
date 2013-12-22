@@ -14,6 +14,7 @@
 	<http pattern="/images/**" security="none" />
 	<http pattern="/resources/**" security="none" />
 	<http pattern="/components/**" security="none" />
+	<http pattern="/uue-index.jsp" security="none" />
 
 	<http access-denied-page="/common/errors.jsp">
 		<form-login login-page="/pub/signin"
