@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.entity;
+package lab.uue.core.entity;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,10 +13,10 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
 
-import lab.s2jh.core.audit.SaveUpdateAuditListener;
-import lab.s2jh.core.entity.annotation.SkipParamBind;
-import lab.s2jh.core.entity.def.DefaultAuditable;
-import lab.s2jh.core.web.json.DateTimeJsonSerializer;
+import lab.uue.core.audit.SaveUpdateAuditListener;
+import lab.uue.core.entity.annotation.SkipParamBind;
+import lab.uue.core.entity.def.DefaultAuditable;
+import lab.uue.core.web.json.DateTimeJsonSerializer;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;

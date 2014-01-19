@@ -1,9 +1,9 @@
-package lab.s2jh.sys.dao;
+package lab.uue.sys.dao;
 
 import java.util.List;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.sys.entity.AttachmentFile;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.sys.entity.AttachmentFile;
 
 import org.springframework.stereotype.Repository;
 

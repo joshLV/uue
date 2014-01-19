@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.convert;
+package lab.uue.core.web.convert;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;

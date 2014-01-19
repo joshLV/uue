@@ -1,23 +1,23 @@
-package lab.s2jh.auth.service;
+package lab.uue.auth.service;
 
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import lab.s2jh.auth.dao.PrivilegeDao;
-import lab.s2jh.auth.dao.RoleDao;
-import lab.s2jh.auth.dao.UserDao;
-import lab.s2jh.auth.dao.UserLogonLogDao;
-import lab.s2jh.auth.dao.UserR2RoleDao;
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.auth.entity.UserLogonLog;
-import lab.s2jh.auth.entity.UserR2Role;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.security.AclService;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.service.R2OperationEnum;
+import lab.uue.auth.dao.PrivilegeDao;
+import lab.uue.auth.dao.RoleDao;
+import lab.uue.auth.dao.UserDao;
+import lab.uue.auth.dao.UserLogonLogDao;
+import lab.uue.auth.dao.UserR2RoleDao;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.User;
+import lab.uue.auth.entity.UserLogonLog;
+import lab.uue.auth.entity.UserR2Role;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.security.AclService;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.service.R2OperationEnum;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;

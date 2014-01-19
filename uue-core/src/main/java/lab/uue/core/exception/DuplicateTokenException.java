@@ -1,4 +1,4 @@
-package lab.s2jh.core.exception;
+package lab.uue.core.exception;
 
 public class DuplicateTokenException extends BaseRuntimeException{
 

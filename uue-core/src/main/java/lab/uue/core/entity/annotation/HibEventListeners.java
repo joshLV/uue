@@ -1,4 +1,4 @@
-package lab.s2jh.core.entity.annotation;
+package lab.uue.core.entity.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

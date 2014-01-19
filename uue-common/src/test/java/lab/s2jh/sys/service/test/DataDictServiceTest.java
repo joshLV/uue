@@ -5,8 +5,8 @@ import java.util.Map;
 
 import lab.s2jh.core.test.SpringTransactionalTestCase;
 import lab.s2jh.core.test.TestObjectUtils;
-import lab.s2jh.sys.entity.DataDict;
-import lab.s2jh.sys.service.DataDictService;
+import lab.uue.sys.entity.DataDict;
+import lab.uue.sys.service.DataDictService;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,9 +1,9 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.sys.dao.LoggingEventDao;
-import lab.s2jh.sys.entity.LoggingEvent;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
+import lab.uue.sys.dao.LoggingEventDao;
+import lab.uue.sys.entity.LoggingEvent;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

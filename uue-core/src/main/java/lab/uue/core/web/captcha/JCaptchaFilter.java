@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.captcha;
+package lab.uue.core.web.captcha;
 
 import java.io.IOException;
 
@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import lab.s2jh.core.context.KernelConfigParameters;
-import lab.s2jh.core.context.SpringContextHolder;
+import lab.uue.core.context.KernelConfigParameters;
+import lab.uue.core.context.SpringContextHolder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

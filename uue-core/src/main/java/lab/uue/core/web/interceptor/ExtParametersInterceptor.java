@@ -1,12 +1,12 @@
-package lab.s2jh.core.web.interceptor;
+package lab.uue.core.web.interceptor;
 
 import java.beans.IntrospectionException;
 import java.lang.reflect.Method;
 import java.util.Map;
 
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.SkipParamBind;
-import lab.s2jh.core.web.BaseController;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.SkipParamBind;
+import lab.uue.core.web.BaseController;
 import ognl.OgnlContext;
 import ognl.OgnlException;
 import ognl.OgnlRuntime;

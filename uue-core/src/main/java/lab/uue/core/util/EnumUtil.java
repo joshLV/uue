@@ -1,9 +1,9 @@
-package lab.s2jh.core.util;
+package lab.uue.core.util;
 
 import java.lang.reflect.Field;
 import java.util.Map;
 
-import lab.s2jh.core.annotation.MetaData;
+import lab.uue.core.annotation.MetaData;
 
 import com.google.common.collect.Maps;
 

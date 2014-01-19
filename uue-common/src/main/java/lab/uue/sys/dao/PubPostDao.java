@@ -1,12 +1,12 @@
-package lab.s2jh.sys.dao;
+package lab.uue.sys.dao;
 
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.QueryHint;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.sys.entity.PubPost;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.sys.entity.PubPost;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;

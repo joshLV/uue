@@ -1,9 +1,9 @@
-package lab.s2jh.rpt.service;
+package lab.uue.rpt.service;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.rpt.entity.ReportParam;
-import lab.s2jh.rpt.dao.ReportParamDao;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
+import lab.uue.rpt.dao.ReportParamDao;
+import lab.uue.rpt.entity.ReportParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

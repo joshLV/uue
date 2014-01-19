@@ -1,12 +1,12 @@
 package lab.s2jh.sys.service.test;
 
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter.MatchType;
 import lab.s2jh.core.test.SpringTransactionalTestCase;
 import lab.s2jh.core.test.TestObjectUtils;
-import lab.s2jh.sys.entity.Menu;
-import lab.s2jh.sys.service.MenuService;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.pagination.PropertyFilter;
+import lab.uue.core.pagination.PropertyFilter.MatchType;
+import lab.uue.sys.entity.Menu;
+import lab.uue.sys.service.MenuService;
 
 import org.junit.Assert;
 import org.junit.Test;

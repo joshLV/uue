@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.filter;
+package lab.uue.core.web.filter;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -7,7 +7,7 @@ import java.util.Set;
 
 import javax.servlet.FilterConfig;
 
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
 
 import org.apache.commons.lang3.ClassUtils;
 import org.apache.struts2.dispatcher.Dispatcher;

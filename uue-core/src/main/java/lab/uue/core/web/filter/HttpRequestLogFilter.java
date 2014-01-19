@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.web.filter;
+package lab.uue.core.web.filter;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -15,7 +15,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import lab.s2jh.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthContextHolder;
 
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.StringUtils;

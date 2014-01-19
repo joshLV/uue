@@ -1,6 +1,6 @@
-package lab.s2jh.pub.web.action;
+package lab.uue.pub.web.action;
 
-import lab.s2jh.core.context.KernelConfigParameters;
+import lab.uue.core.context.KernelConfigParameters;
 
 import org.apache.struts2.rest.RestActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;

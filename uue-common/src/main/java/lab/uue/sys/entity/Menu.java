@@ -1,4 +1,4 @@
-package lab.s2jh.sys.entity;
+package lab.uue.sys.entity;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
 
 import org.apache.commons.lang3.builder.CompareToBuilder;
 import org.hibernate.annotations.Cache;

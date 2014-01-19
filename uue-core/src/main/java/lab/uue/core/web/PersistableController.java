@@ -1,4 +1,4 @@
-package lab.s2jh.core.web;
+package lab.uue.core.web;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -18,20 +18,20 @@ import javax.persistence.EntityNotFoundException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.audit.envers.EntityRevision;
-import lab.s2jh.core.audit.envers.ExtDefaultRevisionEntity;
-import lab.s2jh.core.audit.envers.ExtRevisionListener;
-import lab.s2jh.core.entity.PersistableEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
-import lab.s2jh.core.entity.def.OperationAuditable;
-import lab.s2jh.core.exception.WebException;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.util.DateUtils;
-import lab.s2jh.core.util.ExtStringUtils;
-import lab.s2jh.core.web.view.OperationResult;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.audit.envers.EntityRevision;
+import lab.uue.core.audit.envers.ExtDefaultRevisionEntity;
+import lab.uue.core.audit.envers.ExtRevisionListener;
+import lab.uue.core.entity.PersistableEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
+import lab.uue.core.entity.def.OperationAuditable;
+import lab.uue.core.exception.WebException;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.pagination.PropertyFilter;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.util.DateUtils;
+import lab.uue.core.util.ExtStringUtils;
+import lab.uue.core.web.view.OperationResult;
 import net.sf.jxls.transformer.XLSTransformer;
 
 import org.apache.commons.io.IOUtils;

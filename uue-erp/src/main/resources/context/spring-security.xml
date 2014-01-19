@@ -36,7 +36,7 @@
 
 	<!-- 配置过滤器 -->
 	<beans:bean id="securityFilter"
-		class="lab.s2jh.auth.security.ExtSecurityInterceptor">
+		class="lab.uue.auth.security.ExtSecurityInterceptor">
 		<!-- 用户拥有的权限 -->
 		<beans:property name="authenticationManager" ref="authenticationManager" />
 		<!-- 用户是否拥有所请求资源的权限 -->
@@ -46,7 +46,7 @@
 	</beans:bean>
 
 	<beans:bean id="userDetailsService"
-		class="lab.s2jh.auth.security.AuthUserDetailsService">
+		class="lab.uue.auth.security.AuthUserDetailsService">
 		<beans:property name="userService" ref="userService" />
 		<beans:property name="privilegeService" ref="privilegeService" />
 		<beans:property name="roleService" ref="roleService" />
@@ -61,15 +61,15 @@
 	</authentication-manager>
 
 	<beans:bean id="accessDecisionManager"
-		class="lab.s2jh.auth.security.AccessDecisionManagerImpl"></beans:bean>
+		class="lab.uue.auth.security.AccessDecisionManagerImpl"></beans:bean>
 	<beans:bean id="securityMetadataSource"
-		class="lab.s2jh.auth.security.FilterInvocationSecurityMetadataSourceImpl">
+		class="lab.uue.auth.security.FilterInvocationSecurityMetadataSourceImpl">
 		<beans:property name="privilegeService" ref="privilegeService"></beans:property>
 	</beans:bean>
 
 	<!-- 写入登录记录 -->
 	<beans:bean id="authenticationSuccessHistHandler"
-		class="lab.s2jh.auth.security.AuthenticationSuccessHistHandler">
+		class="lab.uue.auth.security.AuthenticationSuccessHistHandler">
 		<beans:property name="defaultTargetUrl" value="/layout" />
 		<beans:property name="alwaysUseDefaultTargetUrl" value="false" />
 		<beans:property name="userService" ref="userService" />

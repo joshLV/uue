@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.util;
+package lab.uue.core.web.util;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;

@@ -1,4 +1,4 @@
-package lab.s2jh.core.util;
+package lab.uue.core.util;
 
 import java.text.DecimalFormat;
 

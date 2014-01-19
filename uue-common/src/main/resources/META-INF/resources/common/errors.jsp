@@ -1,18 +1,18 @@
 <%@page import="java.text.SimpleDateFormat"%>
-<%@page import="lab.s2jh.core.util.DateUtils"%>
-<%@page import="lab.s2jh.core.security.AuthContextHolder"%>
+<%@page import="lab.uue.core.util.DateUtils"%>
+<%@page import="lab.uue.core.security.AuthContextHolder"%>
 <%@page import="org.apache.commons.lang3.StringUtils"%>
 <%@page import="org.apache.commons.lang3.time.DateFormatUtils"%>
 <%@page import="org.apache.commons.lang3.RandomStringUtils"%>
 <%@page import="org.apache.commons.lang3.BooleanUtils"%>
 <%@page import="org.slf4j.MDC"%>
-<%@page import="lab.s2jh.core.web.interceptor.ExtTokenInterceptor"%>
+<%@page import="lab.uue.core.web.interceptor.ExtTokenInterceptor"%>
 <%@page import="javax.servlet.http.HttpServletResponse"%>
 <%@ page contentType="text/html; charset=UTF-8" isErrorPage="true"%>
 <%
-    org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("lab.s2jh.errors");
+    org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("lab.uue.errors");
     //异常情况移除用于控制重复提交的Token记录，使得用户可以再次提交
-    //@see lab.s2jh.core.web.interceptor.ExtTokenInterceptor
+    //@see lab.uue.core.web.interceptor.ExtTokenInterceptor
     session.removeAttribute(ExtTokenInterceptor.TOKEN_COUNTER);
 
     Throwable e = exception;
@@ -28,9 +28,9 @@
     boolean skipLog = false;
     String errorTitle = "ERR" + rand + ": ";
     String errorMessage = errorTitle + "系统运行错误，请联系管理员！";
-    if (e instanceof lab.s2jh.core.exception.DuplicateTokenException) {
+    if (e instanceof lab.uue.core.exception.DuplicateTokenException) {
         errorMessage = "请勿快速重复提交表单";
-    } else if (e instanceof lab.s2jh.core.exception.BaseRuntimeException) {
+    } else if (e instanceof lab.uue.core.exception.BaseRuntimeException) {
         errorMessage = errorTitle + e.getMessage();
     } else if (e instanceof org.springframework.dao.DataIntegrityViolationException) {
         org.springframework.dao.DataIntegrityViolationException dive = (org.springframework.dao.DataIntegrityViolationException) e;

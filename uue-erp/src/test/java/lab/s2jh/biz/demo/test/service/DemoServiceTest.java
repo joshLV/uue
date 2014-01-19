@@ -2,10 +2,10 @@ package lab.s2jh.biz.demo.test.service;
 
 import java.util.List;
 
-import lab.s2jh.biz.demo.entity.Demo;
-import lab.s2jh.biz.demo.service.DemoService;
 import lab.s2jh.core.test.SpringTransactionalTestCase;
 import lab.s2jh.core.test.TestObjectUtils;
+import lab.uue.biz.demo.entity.Demo;
+import lab.uue.biz.demo.service.DemoService;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,15 +1,15 @@
-package lab.s2jh.sys.web.action;
+package lab.uue.sys.web.action;
 
 import java.util.List;
 import java.util.Map;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.core.web.view.OperationResult;
-import lab.s2jh.sys.entity.DataDict;
-import lab.s2jh.sys.service.DataDictService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.view.OperationResult;
+import lab.uue.sys.entity.DataDict;
+import lab.uue.sys.service.DataDictService;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

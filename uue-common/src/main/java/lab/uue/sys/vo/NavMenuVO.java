@@ -1,4 +1,4 @@
-package lab.s2jh.sys.vo;
+package lab.uue.sys.vo;
 
 import java.util.ArrayList;
 import java.util.List;

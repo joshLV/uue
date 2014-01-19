@@ -5,10 +5,10 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.service.PrivilegeService;
 import lab.s2jh.core.test.SpringTransactionalTestCase;
 import lab.s2jh.core.test.TestObjectUtils;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.service.PrivilegeService;
 
 import org.junit.Assert;
 import org.junit.Test;

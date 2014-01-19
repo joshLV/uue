@@ -1,4 +1,4 @@
-package lab.s2jh.pub.web.action;
+package lab.uue.pub.web.action;
 
 import java.util.HashSet;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
-import lab.s2jh.auth.service.UserService;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.security.AuthUserDetails;
-import lab.s2jh.sys.service.MenuService;
-import lab.s2jh.sys.vo.NavMenuVO;
+import lab.uue.auth.service.UserService;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthUserDetails;
+import lab.uue.sys.service.MenuService;
+import lab.uue.sys.vo.NavMenuVO;
 
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Namespace;

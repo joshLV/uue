@@ -1,4 +1,4 @@
-package lab.s2jh.tool.builder;
+package lab.uue.tool.builder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.annotation.EntityAutoCode;
 
 import org.apache.commons.lang3.CharUtils;
 import org.apache.commons.lang3.StringUtils;

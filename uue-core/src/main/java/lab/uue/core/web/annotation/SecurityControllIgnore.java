@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.annotation;
+package lab.uue.core.web.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

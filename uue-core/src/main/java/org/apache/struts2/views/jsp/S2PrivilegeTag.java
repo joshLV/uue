@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import lab.s2jh.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthContextHolder;
 
 import org.apache.commons.lang3.StringUtils;
 

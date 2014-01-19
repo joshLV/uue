@@ -1,11 +1,11 @@
-package lab.s2jh.sys.dao;
+package lab.uue.sys.dao;
 
 import java.util.List;
 
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.sys.entity.PubPost;
-import lab.s2jh.sys.entity.PubPostRead;
+import lab.uue.auth.entity.User;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.sys.entity.PubPost;
+import lab.uue.sys.entity.PubPostRead;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

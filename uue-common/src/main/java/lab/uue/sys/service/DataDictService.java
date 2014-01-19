@@ -1,13 +1,13 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
 import java.util.List;
 import java.util.Map;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.sys.dao.DataDictDao;
-import lab.s2jh.sys.entity.DataDict;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.service.BaseService;
+import lab.uue.sys.dao.DataDictDao;
+import lab.uue.sys.entity.DataDict;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

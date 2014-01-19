@@ -1,7 +1,7 @@
-package lab.s2jh.rpt.dao;
+package lab.uue.rpt.dao;
 
-import lab.s2jh.rpt.entity.ReportParam;
-import lab.s2jh.core.dao.BaseDao;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.rpt.entity.ReportParam;
 
 import org.springframework.stereotype.Repository;
 

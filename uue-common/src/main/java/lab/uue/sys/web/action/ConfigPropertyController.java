@@ -1,10 +1,10 @@
-package lab.s2jh.sys.web.action;
+package lab.uue.sys.web.action;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.sys.entity.ConfigProperty;
-import lab.s2jh.sys.service.ConfigPropertyService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.sys.entity.ConfigProperty;
+import lab.uue.sys.service.ConfigPropertyService;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

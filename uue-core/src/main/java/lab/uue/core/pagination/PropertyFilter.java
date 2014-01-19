@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.pagination;
+package lab.uue.core.pagination;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -14,8 +14,8 @@ import java.util.Set;
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 
-import lab.s2jh.core.util.reflection.ConvertUtils;
-import lab.s2jh.core.web.util.ServletUtils;
+import lab.uue.core.util.reflection.ConvertUtils;
+import lab.uue.core.web.util.ServletUtils;
 import ognl.OgnlRuntime;
 
 import org.apache.commons.lang3.BooleanUtils;

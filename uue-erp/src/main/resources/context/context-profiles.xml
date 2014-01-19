@@ -8,7 +8,7 @@
 
 	<beans profile="default">
 		<!-- 定制扩展PropertyPlaceholder，实现从数据库加载覆盖属性配置 -->
-		<bean class="lab.s2jh.cfg.DynamicPropertyPlaceholderConfigurer">
+		<bean class="lab.uue.cfg.DynamicPropertyPlaceholderConfigurer">
 			<property name="locations">
 				<list>
 					<value>classpath:/application.properties</value>

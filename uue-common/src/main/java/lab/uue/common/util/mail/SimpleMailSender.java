@@ -24,6 +24,8 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+
+
 /**
  * ClassName:SimpleMailSender <br/>
  * Description: 简单的邮件发送类（不带附件）. <br/>

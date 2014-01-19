@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.listener;
+package lab.uue.core.web.listener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

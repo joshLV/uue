@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import lab.s2jh.core.web.json.DateJsonSerializer;
-import lab.s2jh.core.web.json.DateTimeJsonSerializer;
-import lab.s2jh.core.web.json.JodaDateJsonSerializer;
-import lab.s2jh.core.web.json.JodaDateTimeJsonSerializer;
+import lab.uue.core.web.json.DateJsonSerializer;
+import lab.uue.core.web.json.DateTimeJsonSerializer;
+import lab.uue.core.web.json.JodaDateJsonSerializer;
+import lab.uue.core.web.json.JodaDateTimeJsonSerializer;
 import ognl.OgnlContext;
 import ognl.OgnlException;
 import ognl.OgnlRuntime;

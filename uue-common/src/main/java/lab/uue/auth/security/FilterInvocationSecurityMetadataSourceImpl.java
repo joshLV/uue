@@ -1,10 +1,10 @@
-package lab.s2jh.auth.security;
+package lab.uue.auth.security;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 
-import lab.s2jh.auth.service.PrivilegeService;
+import lab.uue.auth.service.PrivilegeService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

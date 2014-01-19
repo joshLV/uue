@@ -1,4 +1,4 @@
-package lab.s2jh.core.dao;
+package lab.uue.core.dao;
 
 import java.io.Serializable;
 

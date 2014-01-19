@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.listener;
+package lab.uue.core.web.listener;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -8,9 +8,9 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.context.SpringContextHolder;
-import lab.s2jh.core.dao.jpa.ExtPersistenceUnitPostProcessor;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.context.SpringContextHolder;
+import lab.uue.core.dao.jpa.ExtPersistenceUnitPostProcessor;
 
 import org.apache.commons.lang3.ClassUtils;
 import org.apache.commons.lang3.StringUtils;

@@ -1,6 +1,6 @@
-package lab.s2jh.core.cons;
+package lab.uue.core.cons;
 
-import lab.s2jh.core.annotation.MetaData;
+import lab.uue.core.annotation.MetaData;
 
 public class TreeNodeConstant {
     

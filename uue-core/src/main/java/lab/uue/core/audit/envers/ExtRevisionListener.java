@@ -1,9 +1,9 @@
-package lab.s2jh.core.audit.envers;
+package lab.uue.core.audit.envers;
 
 import java.util.Map;
 
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.security.AuthUserDetails;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthUserDetails;
 
 import org.hibernate.envers.RevisionListener;
 

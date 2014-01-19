@@ -1,11 +1,11 @@
-package lab.s2jh.core.web.interceptor;
+package lab.uue.core.web.interceptor;
 
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import lab.s2jh.core.exception.DuplicateTokenException;
+import lab.uue.core.exception.DuplicateTokenException;
 
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.util.TokenHelper;

@@ -20,7 +20,7 @@
 	<description>Spring公共配置 </description>
 
 	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
-	<context:component-scan base-package="lab.s2jh"
+	<context:component-scan base-package="lab.uue"
 		scoped-proxy="targetClass">
 	</context:component-scan>
 
@@ -32,7 +32,7 @@
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
 		</property>
 		<property name="persistenceUnitPostProcessors" ref="persistenceUnitPostProcessors" />
-		<property name="packagesToScan" value="lab.s2jh" />
+		<property name="packagesToScan" value="lab.uue" />
 		<property name="jpaProperties">
 			<props>
 				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
@@ -58,10 +58,10 @@
 		</property>
 	</bean>
 
-	<bean id="persistenceUnitPostProcessors" class="lab.s2jh.core.dao.jpa.ExtPersistenceUnitPostProcessor" />
+	<bean id="persistenceUnitPostProcessors" class="lab.uue.core.dao.jpa.ExtPersistenceUnitPostProcessor" />
 
 	<!-- Spring Data JPA配置 -->
-	<jpa:repositories base-package="lab.s2jh"
+	<jpa:repositories base-package="lab.uue"
 		transaction-manager-ref="transactionManager"
 		entity-manager-factory-ref="entityManagerFactory" />
 

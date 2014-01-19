@@ -1,4 +1,4 @@
-package lab.s2jh.auth.security;
+package lab.uue.auth.security;
 
 import java.io.IOException;
 

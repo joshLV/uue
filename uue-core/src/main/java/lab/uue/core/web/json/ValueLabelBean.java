@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.json;
+package lab.uue.core.web.json;
 
 import java.io.Serializable;
 import java.util.ArrayList;

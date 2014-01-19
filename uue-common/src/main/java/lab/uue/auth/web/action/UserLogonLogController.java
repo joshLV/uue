@@ -1,10 +1,10 @@
-package lab.s2jh.auth.web.action;
+package lab.uue.auth.web.action;
 
-import lab.s2jh.auth.entity.UserLogonLog;
-import lab.s2jh.auth.service.UserLogonLogService;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
+import lab.uue.auth.entity.UserLogonLog;
+import lab.uue.auth.service.UserLogonLogService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

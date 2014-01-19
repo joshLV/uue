@@ -1,4 +1,4 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,16 +8,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.service.PrivilegeService;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.rpt.dao.ReportDefDao;
-import lab.s2jh.rpt.entity.ReportDef;
-import lab.s2jh.sys.dao.MenuDao;
-import lab.s2jh.sys.entity.Menu;
-import lab.s2jh.sys.entity.Menu.MenuTypeEnum;
-import lab.s2jh.sys.vo.NavMenuVO;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.service.PrivilegeService;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
+import lab.uue.rpt.dao.ReportDefDao;
+import lab.uue.rpt.entity.ReportDef;
+import lab.uue.sys.dao.MenuDao;
+import lab.uue.sys.entity.Menu;
+import lab.uue.sys.entity.Menu.MenuTypeEnum;
+import lab.uue.sys.vo.NavMenuVO;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

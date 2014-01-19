@@ -1,4 +1,4 @@
-package lab.s2jh.biz.demo.entity;
+package lab.uue.biz.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,9 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.annotations.Cache;

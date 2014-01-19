@@ -2,7 +2,7 @@
 <%@page import="org.springframework.security.core.*"%>
 <%@page import="org.springframework.security.web.*"%>
 <%@page import="org.springframework.security.authentication.*"%>
-<%@page import="lab.s2jh.core.web.captcha.BadCaptchaException"%>
+<%@page import="lab.uue.core.web.captcha.BadCaptchaException"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="/common/taglibs.jsp"%>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ input[type="text"],input[type="password"] {
 	<div class="container-fluid">
 		<div class="navbar">
 			<div class="navbar-inner">
-				<a class="brand" href='javascript:void(0)'>&nbsp;S2JH - <small>A Java/J2EE
+				<a class="brand" href='javascript:void(0)'>&nbsp;UUE - <small>A Java/J2EE
 						development framework for enterprise system based on Struts/Spring/JPA/Hibernate and
 						jquery/bootstrap</small></a>
 			</div>
@@ -42,7 +42,7 @@ input[type="text"],input[type="password"] {
 												.getAttribute(WebAttributes.AUTHENTICATION_EXCEPTION);
 										if (e != null) {
 											org.slf4j.Logger logger = org.slf4j.LoggerFactory
-													.getLogger("lab.s2jh.errors.login");
+													.getLogger("lab.uue.errors.login");
 											if (logger.isDebugEnabled()) {
 												logger.debug("login.exception", e);
 											}
@@ -147,7 +147,7 @@ input[type="text"],input[type="password"] {
 			<p>
 				<span class="pull-left"> <a href="mailto:xautlx@hotmail.com" target="_blank">Contact
 						Me</a>
-				</span> ©2013 by S2JH
+				</span> ©2013 by UUE
 			</p>
 		</div>
 	</div>

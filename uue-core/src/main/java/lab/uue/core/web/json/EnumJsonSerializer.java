@@ -1,9 +1,9 @@
-package lab.s2jh.core.web.json;
+package lab.uue.core.web.json;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
 
-import lab.s2jh.core.annotation.MetaData;
+import lab.uue.core.annotation.MetaData;
 
 import org.apache.commons.lang3.reflect.FieldUtils;
 

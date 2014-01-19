@@ -1,4 +1,4 @@
-package lab.s2jh.rpt.web.action;
+package lab.uue.rpt.web.action;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -12,16 +12,16 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.sql.DataSource;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.exception.WebException;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.rpt.entity.ReportDef;
-import lab.s2jh.rpt.service.ReportDefService;
-import lab.s2jh.sys.entity.AttachmentFile;
-import lab.s2jh.sys.entity.DataDict;
-import lab.s2jh.sys.service.DataDictService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.exception.WebException;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.rpt.entity.ReportDef;
+import lab.uue.rpt.service.ReportDefService;
+import lab.uue.sys.entity.AttachmentFile;
+import lab.uue.sys.entity.DataDict;
+import lab.uue.sys.service.DataDictService;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import ognl.Ognl;
 import ognl.OgnlException;

@@ -1,4 +1,4 @@
-package lab.s2jh.core.security;
+package lab.uue.core.security;
 
 import java.util.Collection;
 import java.util.Map;

@@ -1,26 +1,26 @@
-package lab.s2jh.auth.web.action;
+package lab.uue.auth.web.action;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.RoleR2Privilege;
-import lab.s2jh.auth.service.PrivilegeService;
-import lab.s2jh.auth.service.RoleService;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.exception.DataAccessDeniedException;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter.MatchType;
-import lab.s2jh.core.security.AclService;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.core.web.view.OperationResult;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.RoleR2Privilege;
+import lab.uue.auth.service.PrivilegeService;
+import lab.uue.auth.service.RoleService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.exception.DataAccessDeniedException;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.pagination.PropertyFilter;
+import lab.uue.core.pagination.PropertyFilter.MatchType;
+import lab.uue.core.security.AclService;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.view.OperationResult;
 
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.struts2.rest.HttpHeaders;

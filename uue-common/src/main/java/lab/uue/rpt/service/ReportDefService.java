@@ -1,20 +1,20 @@
-package lab.s2jh.rpt.service;
+package lab.uue.rpt.service;
 
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import lab.s2jh.auth.dao.RoleDao;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.service.R2OperationEnum;
-import lab.s2jh.rpt.dao.ReportDefDao;
-import lab.s2jh.rpt.dao.ReportDefR2RoleDao;
-import lab.s2jh.rpt.entity.ReportDef;
-import lab.s2jh.rpt.entity.ReportDefR2Role;
-import lab.s2jh.sys.dao.AttachmentFileDao;
-import lab.s2jh.sys.entity.AttachmentFile;
+import lab.uue.auth.dao.RoleDao;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.service.R2OperationEnum;
+import lab.uue.rpt.dao.ReportDefDao;
+import lab.uue.rpt.dao.ReportDefR2RoleDao;
+import lab.uue.rpt.entity.ReportDef;
+import lab.uue.rpt.entity.ReportDefR2Role;
+import lab.uue.sys.dao.AttachmentFileDao;
+import lab.uue.sys.entity.AttachmentFile;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;

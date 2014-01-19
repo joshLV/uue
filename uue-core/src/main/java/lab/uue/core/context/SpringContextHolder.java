@@ -1,4 +1,4 @@
-package lab.s2jh.core.context;
+package lab.uue.core.context;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.util.Assert;

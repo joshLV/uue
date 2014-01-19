@@ -1,4 +1,4 @@
-package lab.s2jh.core.context;
+package lab.uue.core.context;
 
 import org.apache.commons.lang3.BooleanUtils;
 import org.springframework.beans.factory.annotation.Value;

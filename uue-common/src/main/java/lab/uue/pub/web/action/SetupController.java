@@ -1,11 +1,11 @@
-package lab.s2jh.pub.web.action;
+package lab.uue.pub.web.action;
 
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.auth.service.UserService;
+import lab.uue.auth.entity.User;
+import lab.uue.auth.service.UserService;
 
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.rest.DefaultHttpHeaders;

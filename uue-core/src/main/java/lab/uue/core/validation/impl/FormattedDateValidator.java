@@ -1,4 +1,4 @@
-package lab.s2jh.core.validation.impl;
+package lab.uue.core.validation.impl;
 
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
@@ -7,7 +7,7 @@ import java.util.Date;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import lab.s2jh.core.validation.FormattedDate;
+import lab.uue.core.validation.FormattedDate;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.Assert;

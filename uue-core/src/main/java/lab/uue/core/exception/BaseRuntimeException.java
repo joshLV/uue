@@ -1,4 +1,4 @@
-package lab.s2jh.core.exception;
+package lab.uue.core.exception;
 
 import org.springframework.core.NestedRuntimeException;
 

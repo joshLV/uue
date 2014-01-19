@@ -1,4 +1,4 @@
-package lab.s2jh.auth.service;
+package lab.uue.auth.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,20 +12,20 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Subquery;
 
-import lab.s2jh.auth.dao.PrivilegeDao;
-import lab.s2jh.auth.dao.RoleDao;
-import lab.s2jh.auth.dao.RoleR2PrivilegeDao;
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.RoleR2Privilege;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.service.R2OperationEnum;
-import lab.s2jh.core.web.filter.PostStrutsPrepareAndExecuteFilter;
-import lab.s2jh.rpt.dao.ReportDefDao;
-import lab.s2jh.rpt.entity.ReportDef;
-import lab.s2jh.rpt.entity.ReportDefR2Role;
+import lab.uue.auth.dao.PrivilegeDao;
+import lab.uue.auth.dao.RoleDao;
+import lab.uue.auth.dao.RoleR2PrivilegeDao;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.RoleR2Privilege;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.service.R2OperationEnum;
+import lab.uue.core.web.filter.PostStrutsPrepareAndExecuteFilter;
+import lab.uue.rpt.dao.ReportDefDao;
+import lab.uue.rpt.entity.ReportDef;
+import lab.uue.rpt.entity.ReportDefR2Role;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;

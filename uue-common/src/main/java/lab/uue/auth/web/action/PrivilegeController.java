@@ -1,4 +1,4 @@
-package lab.s2jh.auth.web.action;
+package lab.uue.auth.web.action;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;
@@ -10,20 +10,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.RoleR2Privilege;
-import lab.s2jh.auth.service.PrivilegeService;
-import lab.s2jh.auth.service.RoleService;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.service.R2OperationEnum;
-import lab.s2jh.core.util.UidUtils;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.core.web.view.OperationResult;
-import lab.s2jh.sys.service.DataDictService;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.RoleR2Privilege;
+import lab.uue.auth.service.PrivilegeService;
+import lab.uue.auth.service.RoleService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.service.R2OperationEnum;
+import lab.uue.core.util.UidUtils;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.view.OperationResult;
+import lab.uue.sys.service.DataDictService;
 
 import org.apache.commons.lang3.BooleanUtils;
 import org.apache.commons.lang3.ClassUtils;

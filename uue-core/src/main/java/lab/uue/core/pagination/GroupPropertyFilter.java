@@ -1,14 +1,14 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.pagination;
+package lab.uue.core.pagination;
 
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import lab.s2jh.core.exception.ServiceException;
-import lab.s2jh.core.web.json.JacksonMapperFactory;
+import lab.uue.core.exception.ServiceException;
+import lab.uue.core.web.json.JacksonMapperFactory;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;

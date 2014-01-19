@@ -4,8 +4,8 @@ import java.util.List;
 
 import lab.s2jh.core.test.SpringTransactionalTestCase;
 import lab.s2jh.core.test.TestObjectUtils;
-import lab.s2jh.sys.entity.PubPost;
-import lab.s2jh.sys.service.PubPostService;
+import lab.uue.sys.entity.PubPost;
+import lab.uue.sys.service.PubPostService;
 
 import org.junit.Assert;
 import org.junit.Test;

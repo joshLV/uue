@@ -1,4 +1,4 @@
-package lab.s2jh.tool.builder;
+package lab.uue.tool.builder;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;

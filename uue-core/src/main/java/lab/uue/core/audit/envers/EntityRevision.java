@@ -1,4 +1,4 @@
-package lab.s2jh.core.audit.envers;
+package lab.uue.core.audit.envers;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;

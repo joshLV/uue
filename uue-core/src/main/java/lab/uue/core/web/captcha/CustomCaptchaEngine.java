@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.captcha;
+package lab.uue.core.web.captcha;
 
 import java.awt.Font;
 

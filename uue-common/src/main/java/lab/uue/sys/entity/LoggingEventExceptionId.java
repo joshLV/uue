@@ -1,4 +1,4 @@
-package lab.s2jh.sys.entity;
+package lab.uue.sys.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

@@ -1,4 +1,4 @@
-package lab.s2jh.core.entity;
+package lab.uue.core.entity;
 
 import java.io.Serializable;
 import java.util.Map;

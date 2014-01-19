@@ -1,4 +1,4 @@
-package lab.s2jh.auth.security;
+package lab.uue.auth.security;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -11,12 +11,12 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
-import lab.s2jh.auth.entity.UserLogonLog;
-import lab.s2jh.auth.service.UserLogonLogService;
-import lab.s2jh.core.context.SpringContextHolder;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter.MatchType;
+import lab.uue.auth.entity.UserLogonLog;
+import lab.uue.auth.service.UserLogonLogService;
+import lab.uue.core.context.SpringContextHolder;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.pagination.PropertyFilter;
+import lab.uue.core.pagination.PropertyFilter.MatchType;
 
 import org.joda.time.DateTime;
 import org.slf4j.Logger;

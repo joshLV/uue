@@ -1,7 +1,7 @@
-package lab.s2jh.biz.demo.dao;
+package lab.uue.biz.demo.dao;
 
-import lab.s2jh.biz.demo.entity.Demo;
-import lab.s2jh.core.dao.BaseDao;
+import lab.uue.biz.demo.entity.Demo;
+import lab.uue.core.dao.BaseDao;
 
 import org.springframework.stereotype.Repository;
 

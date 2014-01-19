@@ -1,4 +1,4 @@
-package lab.s2jh.core.web.interceptor;
+package lab.uue.core.web.interceptor;
 
 import java.util.Map;
 

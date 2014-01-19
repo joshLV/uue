@@ -1,7 +1,7 @@
 package lab.s2jh.auth.dao.test;
 
-import lab.s2jh.auth.dao.RoleR2PrivilegeDao;
 import lab.s2jh.core.test.SpringTransactionalTestCase;
+import lab.uue.auth.dao.RoleR2PrivilegeDao;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

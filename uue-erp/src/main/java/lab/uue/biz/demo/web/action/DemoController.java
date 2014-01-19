@@ -1,11 +1,11 @@
-package lab.s2jh.biz.demo.web.action;
+package lab.uue.biz.demo.web.action;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.biz.demo.entity.Demo;
-import lab.s2jh.biz.demo.service.DemoService;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.view.OperationResult;
+import lab.uue.biz.demo.entity.Demo;
+import lab.uue.biz.demo.service.DemoService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.view.OperationResult;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

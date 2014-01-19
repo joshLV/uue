@@ -1,4 +1,4 @@
-package lab.s2jh.pub.web.action;
+package lab.uue.pub.web.action;
 
 import java.io.OutputStream;
 

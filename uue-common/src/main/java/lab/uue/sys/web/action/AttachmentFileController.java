@@ -1,18 +1,18 @@
-package lab.s2jh.sys.web.action;
+package lab.uue.sys.web.action;
 
 import java.io.File;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.exception.WebException;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.util.ServletUtils;
-import lab.s2jh.core.web.view.OperationResult;
-import lab.s2jh.sys.entity.AttachmentFile;
-import lab.s2jh.sys.service.AttachmentFileService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.exception.WebException;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.util.ServletUtils;
+import lab.uue.core.web.view.OperationResult;
+import lab.uue.sys.entity.AttachmentFile;
+import lab.uue.sys.service.AttachmentFileService;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;

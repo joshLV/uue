@@ -1,8 +1,8 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
 import java.util.List;
 
-import lab.s2jh.sys.entity.PubPost;
+import lab.uue.sys.entity.PubPost;
 
 import org.joda.time.DateTime;
 import org.slf4j.Logger;

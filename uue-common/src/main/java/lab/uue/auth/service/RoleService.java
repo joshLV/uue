@@ -1,4 +1,4 @@
-package lab.s2jh.auth.service;
+package lab.uue.auth.service;
 
 import java.util.Collection;
 import java.util.List;
@@ -8,17 +8,17 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import lab.s2jh.auth.dao.PrivilegeDao;
-import lab.s2jh.auth.dao.RoleDao;
-import lab.s2jh.auth.dao.RoleR2PrivilegeDao;
-import lab.s2jh.auth.dao.UserR2RoleDao;
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.RoleR2Privilege;
-import lab.s2jh.auth.entity.UserR2Role;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.service.BaseService;
+import lab.uue.auth.dao.PrivilegeDao;
+import lab.uue.auth.dao.RoleDao;
+import lab.uue.auth.dao.RoleR2PrivilegeDao;
+import lab.uue.auth.dao.UserR2RoleDao;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.RoleR2Privilege;
+import lab.uue.auth.entity.UserR2Role;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.service.BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;

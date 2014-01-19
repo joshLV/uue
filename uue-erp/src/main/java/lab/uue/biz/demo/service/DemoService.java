@@ -1,9 +1,9 @@
-package lab.s2jh.biz.demo.service;
+package lab.uue.biz.demo.service;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.biz.demo.entity.Demo;
-import lab.s2jh.biz.demo.dao.DemoDao;
+import lab.uue.biz.demo.dao.DemoDao;
+import lab.uue.biz.demo.entity.Demo;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

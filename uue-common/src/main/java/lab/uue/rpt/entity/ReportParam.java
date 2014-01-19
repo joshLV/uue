@@ -1,4 +1,4 @@
-package lab.s2jh.rpt.entity;
+package lab.uue.rpt.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,8 +10,8 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.def.DynamicParameterDef;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.def.DynamicParameterDef;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

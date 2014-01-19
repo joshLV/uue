@@ -1,4 +1,4 @@
-package lab.s2jh.core.service;
+package lab.uue.core.service;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
@@ -17,13 +17,13 @@ import javax.persistence.criteria.Path;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import lab.s2jh.core.audit.envers.EntityRevision;
-import lab.s2jh.core.audit.envers.ExtDefaultRevisionEntity;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.exception.ServiceException;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter;
-import lab.s2jh.core.pagination.PropertyFilter.MatchType;
+import lab.uue.core.audit.envers.EntityRevision;
+import lab.uue.core.audit.envers.ExtDefaultRevisionEntity;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.exception.ServiceException;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.pagination.PropertyFilter;
+import lab.uue.core.pagination.PropertyFilter.MatchType;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;

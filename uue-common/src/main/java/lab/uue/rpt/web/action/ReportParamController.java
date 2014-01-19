@@ -1,11 +1,11 @@
-package lab.s2jh.rpt.web.action;
+package lab.uue.rpt.web.action;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.rpt.entity.ReportParam;
-import lab.s2jh.rpt.service.ReportDefService;
-import lab.s2jh.rpt.service.ReportParamService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.rpt.entity.ReportParam;
+import lab.uue.rpt.service.ReportDefService;
+import lab.uue.rpt.service.ReportParamService;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

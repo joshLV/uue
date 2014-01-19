@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.util;
+package lab.uue.core.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

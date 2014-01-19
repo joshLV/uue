@@ -1,4 +1,4 @@
-package lab.s2jh.sys.entity;
+package lab.uue.sys.entity;
 
 import java.util.Properties;
 
@@ -10,10 +10,10 @@ import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import lab.s2jh.cfg.DynamicPropertyPlaceholderConfigurer;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
+import lab.uue.cfg.DynamicPropertyPlaceholderConfigurer;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

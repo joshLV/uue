@@ -1,4 +1,4 @@
-package lab.s2jh.profile.web.action;
+package lab.uue.profile.web.action;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -8,17 +8,17 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.auth.service.UserService;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.sys.entity.PubPost;
-import lab.s2jh.sys.entity.PubPostRead;
-import lab.s2jh.sys.service.PubPostReadService;
-import lab.s2jh.sys.service.PubPostService;
+import lab.uue.auth.entity.User;
+import lab.uue.auth.service.UserService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.sys.entity.PubPost;
+import lab.uue.sys.entity.PubPostRead;
+import lab.uue.sys.service.PubPostReadService;
+import lab.uue.sys.service.PubPostService;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.struts2.ServletActionContext;

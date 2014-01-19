@@ -1,4 +1,4 @@
-package lab.s2jh.sys.entity;
+package lab.uue.sys.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,10 +9,10 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
-import lab.s2jh.sys.service.DataDictService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
+import lab.uue.sys.service.DataDictService;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

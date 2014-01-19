@@ -17,13 +17,13 @@
 	</context-param>
 
 	<listener>
-		<listener-class>lab.s2jh.core.web.listener.ApplicationContextPreListener</listener-class>
+		<listener-class>lab.uue.core.web.listener.ApplicationContextPreListener</listener-class>
 	</listener>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>lab.s2jh.core.web.listener.ApplicationContextPostListener</listener-class>
+		<listener-class>lab.uue.core.web.listener.ApplicationContextPostListener</listener-class>
 	</listener>
 	<listener>
 		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
@@ -32,13 +32,13 @@
 		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
 	</listener>
 	<listener>
-		<listener-class>lab.s2jh.auth.security.AuthLogonHistRefreshListener</listener-class>
+		<listener-class>lab.uue.auth.security.AuthLogonHistRefreshListener</listener-class>
 	</listener>
 
 	<!-- jcaptcha验证码图片生成URL -->
 	<servlet>
 		<servlet-name>jcaptcha</servlet-name>
-		<servlet-class>lab.s2jh.core.web.captcha.ImageCaptchaServlet</servlet-class>
+		<servlet-class>lab.uue.core.web.captcha.ImageCaptchaServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>jcaptcha</servlet-name>
@@ -84,7 +84,7 @@
 	<!-- 开发日志过滤器 -->
 	<filter>
 		<filter-name>httpRequestLogFilter</filter-name>
-		<filter-class>lab.s2jh.core.web.filter.HttpRequestLogFilter</filter-class>
+		<filter-class>lab.uue.core.web.filter.HttpRequestLogFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>httpRequestLogFilter</filter-name>
@@ -94,7 +94,7 @@
 	<!-- Spring Security JCaptcha Filter -->
 	<filter>
 		<filter-name>JCaptchaFilter</filter-name>
-		<filter-class>lab.s2jh.core.web.captcha.JCaptchaFilter</filter-class>
+		<filter-class>lab.uue.core.web.captcha.JCaptchaFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>JCaptchaFilter</filter-name>
@@ -113,7 +113,7 @@
 
 	<filter>
 		<filter-name>struts2</filter-name>
-		<filter-class>lab.s2jh.core.web.filter.PostStrutsPrepareAndExecuteFilter</filter-class>
+		<filter-class>lab.uue.core.web.filter.PostStrutsPrepareAndExecuteFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>struts2</filter-name>

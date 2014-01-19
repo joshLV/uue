@@ -1,4 +1,4 @@
-package lab.s2jh.cfg;
+package lab.uue.cfg;
 
 import java.io.IOException;
 import java.sql.ResultSet;

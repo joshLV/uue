@@ -1,7 +1,8 @@
-package lab.s2jh.auth.dao;
+package lab.uue.auth.dao;
 
-import lab.s2jh.auth.entity.UserLogonLog;
-import lab.s2jh.core.dao.BaseDao;
+
+import lab.uue.auth.entity.UserLogonLog;
+import lab.uue.core.dao.BaseDao;
 
 import org.springframework.stereotype.Repository;
 

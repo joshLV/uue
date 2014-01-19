@@ -1,18 +1,18 @@
-package lab.s2jh.auth.security;
+package lab.uue.auth.security;
 
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.auth.service.PrivilegeService;
-import lab.s2jh.auth.service.RoleService;
-import lab.s2jh.auth.service.UserService;
-import lab.s2jh.core.security.AclService;
-import lab.s2jh.core.security.AuthUserDetails;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.entity.User;
+import lab.uue.auth.service.PrivilegeService;
+import lab.uue.auth.service.RoleService;
+import lab.uue.auth.service.UserService;
+import lab.uue.core.security.AclService;
+import lab.uue.core.security.AuthUserDetails;
 
 import org.springframework.security.authentication.AccountExpiredException;
 import org.springframework.security.authentication.CredentialsExpiredException;

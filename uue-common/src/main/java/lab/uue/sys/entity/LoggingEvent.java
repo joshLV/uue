@@ -1,4 +1,4 @@
-package lab.s2jh.sys.entity;
+package lab.uue.sys.entity;
 
 import java.util.Date;
 import java.util.List;
@@ -18,12 +18,12 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.audit.SaveUpdateAuditListener;
-import lab.s2jh.core.entity.PersistableEntity;
-import lab.s2jh.core.entity.annotation.SkipParamBind;
-import lab.s2jh.core.entity.def.DefaultAuditable;
-import lab.s2jh.core.web.json.DateTimeJsonSerializer;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.audit.SaveUpdateAuditListener;
+import lab.uue.core.entity.PersistableEntity;
+import lab.uue.core.entity.annotation.SkipParamBind;
+import lab.uue.core.entity.def.DefaultAuditable;
+import lab.uue.core.web.json.DateTimeJsonSerializer;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

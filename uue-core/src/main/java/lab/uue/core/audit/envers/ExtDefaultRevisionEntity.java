@@ -1,4 +1,4 @@
-package lab.s2jh.core.audit.envers;
+package lab.uue.core.audit.envers;
 
 import java.util.Date;
 
@@ -11,7 +11,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
-import lab.s2jh.core.web.json.DateTimeJsonSerializer;
+import lab.uue.core.web.json.DateTimeJsonSerializer;
 
 import org.hibernate.envers.RevisionEntity;
 import org.hibernate.envers.RevisionNumber;

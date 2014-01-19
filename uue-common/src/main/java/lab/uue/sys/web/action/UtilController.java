@@ -1,4 +1,4 @@
-package lab.s2jh.sys.web.action;
+package lab.uue.sys.web.action;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,9 +11,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.core.web.view.OperationResult;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.view.OperationResult;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.ServletActionContext;

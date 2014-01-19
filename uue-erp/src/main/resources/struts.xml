@@ -46,13 +46,13 @@
 		<interceptors>
 			<!-- 默认实现是配置了Token拦截器只要没有提供token参数则抛出异常,为了灵活控制,调整实现为:有token才进行检测,没有token参数则放行的宽松模式 -->
 			<interceptor name="extTokenInterceptor"
-				class="lab.s2jh.core.web.interceptor.ExtTokenInterceptor" />
+				class="lab.uue.core.web.interceptor.ExtTokenInterceptor" />
 			<!-- 扩展参数拦截器：添加可配置的参数绑定支持 -->
 			<interceptor name="extParametersInterceptor"
-				class="lab.s2jh.core.web.interceptor.ExtParametersInterceptor" />
+				class="lab.uue.core.web.interceptor.ExtParametersInterceptor" />
 			<!-- 修改标准的PrepareInterceptor: 先执行prepare再执行相关的prepareXXX方法 -->
 			<interceptor name="extPrepareInterceptor"
-				class="lab.s2jh.core.web.interceptor.ExtPrepareInterceptor" />
+				class="lab.uue.core.web.interceptor.ExtPrepareInterceptor" />
 
 			<interceptor-stack name="defaultAppStack">
 				<interceptor-ref name="extTokenInterceptor" />

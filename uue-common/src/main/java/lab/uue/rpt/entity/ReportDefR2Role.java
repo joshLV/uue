@@ -1,4 +1,4 @@
-package lab.s2jh.rpt.entity;
+package lab.uue.rpt.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,9 +10,9 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
+import lab.uue.auth.entity.Role;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.annotations.Cache;

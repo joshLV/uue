@@ -1,4 +1,4 @@
-package lab.s2jh.core.entity.def;
+package lab.uue.core.entity.def;
 
 import java.io.Serializable;
 import java.util.Date;

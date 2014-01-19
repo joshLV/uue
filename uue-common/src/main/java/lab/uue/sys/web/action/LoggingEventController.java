@@ -1,10 +1,10 @@
-package lab.s2jh.sys.web.action;
+package lab.uue.sys.web.action;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.web.PersistableController;
-import lab.s2jh.sys.entity.LoggingEvent;
-import lab.s2jh.sys.service.LoggingEventService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.web.PersistableController;
+import lab.uue.sys.entity.LoggingEvent;
+import lab.uue.sys.service.LoggingEventService;
 
 import org.apache.struts2.rest.HttpHeaders;
 import org.springframework.beans.factory.annotation.Autowired;

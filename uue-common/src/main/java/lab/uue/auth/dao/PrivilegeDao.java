@@ -1,11 +1,11 @@
-package lab.s2jh.auth.dao;
+package lab.uue.auth.dao;
 
 import java.util.List;
 
 import javax.persistence.QueryHint;
 
-import lab.s2jh.auth.entity.Privilege;
-import lab.s2jh.core.dao.BaseDao;
+import lab.uue.auth.entity.Privilege;
+import lab.uue.core.dao.BaseDao;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;

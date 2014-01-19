@@ -1,12 +1,12 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
 import java.util.Date;
 import java.util.List;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.sys.dao.PubPostDao;
-import lab.s2jh.sys.entity.PubPost;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
+import lab.uue.sys.dao.PubPostDao;
+import lab.uue.sys.entity.PubPost;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

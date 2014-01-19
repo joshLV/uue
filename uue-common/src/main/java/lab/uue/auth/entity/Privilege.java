@@ -1,4 +1,4 @@
-package lab.s2jh.auth.entity;
+package lab.uue.auth.entity;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.entity.BaseEntity;
-import lab.s2jh.core.entity.annotation.EntityAutoCode;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.entity.BaseEntity;
+import lab.uue.core.entity.annotation.EntityAutoCode;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

@@ -1,9 +1,9 @@
-package lab.s2jh.sys.dao;
+package lab.uue.sys.dao;
 
 import javax.persistence.QueryHint;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.sys.entity.Menu;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.sys.entity.Menu;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;

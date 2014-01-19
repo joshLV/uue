@@ -53,6 +53,6 @@
 		</div>
 		<hr>
 	</div>
-	<%@ include file="pub-footer.jsp"%>
+	<%-- <%@ include file="pub-footer.jsp"%> --%>
 </body>
 </html>

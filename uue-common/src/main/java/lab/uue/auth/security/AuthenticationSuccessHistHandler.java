@@ -1,4 +1,4 @@
-package lab.s2jh.auth.security;
+package lab.uue.auth.security;
 
 import java.io.IOException;
 import java.util.Date;
@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import lab.s2jh.auth.entity.UserLogonLog;
-import lab.s2jh.auth.service.UserService;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.security.AuthUserDetails;
-import lab.s2jh.core.util.IPAddrFetcher;
+import lab.uue.auth.entity.UserLogonLog;
+import lab.uue.auth.service.UserService;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthUserDetails;
+import lab.uue.core.util.IPAddrFetcher;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

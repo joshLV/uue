@@ -1,21 +1,21 @@
-package lab.s2jh.rpt.web.action;
+package lab.uue.rpt.web.action;
 
 import java.util.List;
 import java.util.Set;
 
-import lab.s2jh.auth.entity.Role;
-import lab.s2jh.auth.service.RoleService;
-import lab.s2jh.core.annotation.MetaData;
-import lab.s2jh.core.pagination.GroupPropertyFilter;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.core.service.R2OperationEnum;
-import lab.s2jh.core.web.BaseController;
-import lab.s2jh.core.web.annotation.SecurityControllIgnore;
-import lab.s2jh.core.web.view.OperationResult;
-import lab.s2jh.rpt.entity.ReportDef;
-import lab.s2jh.rpt.entity.ReportDefR2Role;
-import lab.s2jh.rpt.service.ReportDefService;
-import lab.s2jh.sys.service.AttachmentFileService;
+import lab.uue.auth.entity.Role;
+import lab.uue.auth.service.RoleService;
+import lab.uue.core.annotation.MetaData;
+import lab.uue.core.pagination.GroupPropertyFilter;
+import lab.uue.core.service.BaseService;
+import lab.uue.core.service.R2OperationEnum;
+import lab.uue.core.web.BaseController;
+import lab.uue.core.web.annotation.SecurityControllIgnore;
+import lab.uue.core.web.view.OperationResult;
+import lab.uue.rpt.entity.ReportDef;
+import lab.uue.rpt.entity.ReportDefR2Role;
+import lab.uue.rpt.service.ReportDefService;
+import lab.uue.sys.service.AttachmentFileService;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;

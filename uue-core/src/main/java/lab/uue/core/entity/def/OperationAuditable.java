@@ -1,4 +1,4 @@
-package lab.s2jh.core.entity.def;
+package lab.uue.core.entity.def;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

@@ -1,4 +1,4 @@
-package lab.s2jh.auth.entity;
+package lab.uue.auth.entity;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lab.s2jh.core.annotation.MetaData;
+import lab.uue.core.annotation.MetaData;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;

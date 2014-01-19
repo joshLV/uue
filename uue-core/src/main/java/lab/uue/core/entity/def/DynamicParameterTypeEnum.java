@@ -1,6 +1,6 @@
-package lab.s2jh.core.entity.def;
+package lab.uue.core.entity.def;
 
-import lab.s2jh.core.annotation.MetaData;
+import lab.uue.core.annotation.MetaData;
 
 public enum DynamicParameterTypeEnum {
 

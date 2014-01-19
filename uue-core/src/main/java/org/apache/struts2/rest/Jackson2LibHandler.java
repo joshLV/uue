@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 
-import lab.s2jh.core.web.json.JacksonMapperFactory;
+import lab.uue.core.web.json.JacksonMapperFactory;
 
 import org.apache.struts2.StrutsConstants;
 import org.apache.struts2.rest.handler.ContentTypeHandler;

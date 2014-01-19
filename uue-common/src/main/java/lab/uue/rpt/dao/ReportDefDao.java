@@ -1,11 +1,11 @@
-package lab.s2jh.rpt.dao;
+package lab.uue.rpt.dao;
 
 import java.util.List;
 
 import javax.persistence.QueryHint;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.rpt.entity.ReportDef;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.rpt.entity.ReportDef;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.QueryHints;

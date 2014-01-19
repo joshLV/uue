@@ -1,4 +1,4 @@
-package lab.s2jh.core.dao.jpa;
+package lab.uue.core.dao.jpa;
 
 import org.springframework.orm.jpa.persistenceunit.MutablePersistenceUnitInfo;
 import org.springframework.orm.jpa.persistenceunit.PersistenceUnitPostProcessor;

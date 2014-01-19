@@ -1,13 +1,13 @@
-package lab.s2jh.sys.service;
+package lab.uue.sys.service;
 
 import java.util.List;
 
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.core.service.BaseService;
-import lab.s2jh.sys.dao.PubPostReadDao;
-import lab.s2jh.sys.entity.PubPost;
-import lab.s2jh.sys.entity.PubPostRead;
+import lab.uue.auth.entity.User;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.core.service.BaseService;
+import lab.uue.sys.dao.PubPostReadDao;
+import lab.uue.sys.entity.PubPost;
+import lab.uue.sys.entity.PubPostRead;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

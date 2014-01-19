@@ -1,9 +1,9 @@
-package lab.s2jh.rpt.dao;
+package lab.uue.rpt.dao;
 
 import java.util.List;
 
-import lab.s2jh.core.dao.BaseDao;
-import lab.s2jh.rpt.entity.ReportDefR2Role;
+import lab.uue.core.dao.BaseDao;
+import lab.uue.rpt.entity.ReportDefR2Role;
 
 import org.springframework.stereotype.Repository;
 

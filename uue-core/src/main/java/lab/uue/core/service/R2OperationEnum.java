@@ -1,4 +1,4 @@
-package lab.s2jh.core.service;
+package lab.uue.core.service;
 
 public enum R2OperationEnum {
     

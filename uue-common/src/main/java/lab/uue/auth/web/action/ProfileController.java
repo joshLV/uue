@@ -1,12 +1,12 @@
-package lab.s2jh.auth.web.action;
+package lab.uue.auth.web.action;
 
 import javax.servlet.http.HttpServletRequest;
 
-import lab.s2jh.auth.entity.User;
-import lab.s2jh.auth.service.UserService;
-import lab.s2jh.core.security.AuthContextHolder;
-import lab.s2jh.core.security.AuthUserDetails;
-import lab.s2jh.core.web.view.OperationResult;
+import lab.uue.auth.entity.User;
+import lab.uue.auth.service.UserService;
+import lab.uue.core.security.AuthContextHolder;
+import lab.uue.core.security.AuthUserDetails;
+import lab.uue.core.web.view.OperationResult;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.ServletActionContext;

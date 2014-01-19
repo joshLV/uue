@@ -1,12 +1,12 @@
-package lab.s2jh.core.audit;
+package lab.uue.core.audit;
 
 import java.util.Date;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
-import lab.s2jh.core.entity.def.DefaultAuditable;
-import lab.s2jh.core.security.AuthContextHolder;
+import lab.uue.core.entity.def.DefaultAuditable;
+import lab.uue.core.security.AuthContextHolder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

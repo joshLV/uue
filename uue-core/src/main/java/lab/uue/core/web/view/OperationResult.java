@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.web.view;
+package lab.uue.core.web.view;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

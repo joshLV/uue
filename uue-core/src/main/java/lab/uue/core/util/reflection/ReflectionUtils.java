@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2012
  */
-package lab.s2jh.core.util.reflection;
+package lab.uue.core.util.reflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
